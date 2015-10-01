@@ -1,0 +1,111 @@
+\hypertarget{class_npc}{\section{Npc Class Reference}
+\label{class_npc}\index{Npc@{Npc}}
+}
+
+
+{\ttfamily \#include $<$Npc.\-h$>$}
+
+Inheritance diagram for Npc\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_npc}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_npc_a748bee1d096f0dc38a80f2db64186644}{Npc} ()
+\item 
+void \hyperlink{class_npc_a37c66a6ffa287ad975f42c1ab1d65310}{rand\-Enemy} ()
+\begin{DoxyCompactList}\small\item\em Create a random enemy. \end{DoxyCompactList}\item 
+void \hyperlink{class_npc_a8ab8f95be18d4add56959b2620e51a2b}{rand\-Power\-Up} (sf\-::\-Texture \&t)
+\begin{DoxyCompactList}\small\item\em Create a random power up. \end{DoxyCompactList}\item 
+\hypertarget{class_npc_aade5b490d2e23a8a53af6f44c1fc1905}{bool \hyperlink{class_npc_aade5b490d2e23a8a53af6f44c1fc1905}{get\-Direction} ()}\label{class_npc_aade5b490d2e23a8a53af6f44c1fc1905}
+
+\begin{DoxyCompactList}\small\item\em Get the direction the N\-P\-C is facing. \end{DoxyCompactList}\item 
+\hypertarget{class_npc_aa2e93dd316c37c06205bcc90027b8c73}{int {\bfseries get\-Power\-U\-P\-Num} ()}\label{class_npc_aa2e93dd316c37c06205bcc90027b8c73}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries npc\-Type} \{ {\bfseries Goomba}, 
+{\bfseries koopa}
+ \}
+\item 
+enum {\bfseries power\-Up\-Type} \{ {\bfseries shroom}, 
+{\bfseries star}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_npc_ad1ad29ff396ef6164c8ccaecaefa5f5b}{sf\-::\-Texture {\bfseries Goomba\-Text}}\label{class_npc_ad1ad29ff396ef6164c8ccaecaefa5f5b}
+
+\item 
+\hypertarget{class_npc_a1eb1469869b587c975379feede8a3fb6}{sf\-::\-Texture {\bfseries koopa\-Left\-Text}}\label{class_npc_a1eb1469869b587c975379feede8a3fb6}
+
+\item 
+\hypertarget{class_npc_a1e75f38ac92cba55f14379b97f8f64b4}{sf\-::\-Texture \hyperlink{class_npc_a1e75f38ac92cba55f14379b97f8f64b4}{koopa\-Right\-Text}}\label{class_npc_a1e75f38ac92cba55f14379b97f8f64b4}
+
+\begin{DoxyCompactList}\small\item\em enemy textures \end{DoxyCompactList}\item 
+\hypertarget{class_npc_aabe6a589907a40e8955fc79bed1082d9}{sf\-::\-Texture {\bfseries shroom\-Text}}\label{class_npc_aabe6a589907a40e8955fc79bed1082d9}
+
+\item 
+\hypertarget{class_npc_a33b0a408e5908f550c30d9802980b0c3}{sf\-::\-Texture \hyperlink{class_npc_a33b0a408e5908f550c30d9802980b0c3}{star\-Text}}\label{class_npc_a33b0a408e5908f550c30d9802980b0c3}
+
+\begin{DoxyCompactList}\small\item\em Power up textures. \end{DoxyCompactList}\item 
+\hypertarget{class_npc_aa8b57395241330993689a8839a820b98}{bool \hyperlink{class_npc_aa8b57395241330993689a8839a820b98}{direction}}\label{class_npc_aa8b57395241330993689a8839a820b98}
+
+\begin{DoxyCompactList}\small\item\em direction (left == false, right == true); \end{DoxyCompactList}\item 
+\hypertarget{class_npc_a5afc655bd1418b0a489f0ca9da47e560}{int \hyperlink{class_npc_a5afc655bd1418b0a489f0ca9da47e560}{power\-Up\-Num}}\label{class_npc_a5afc655bd1418b0a489f0ca9da47e560}
+
+\begin{DoxyCompactList}\small\item\em number to check if npc is a power up, 0 = no power up, 1 = shroom, 2 = star \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+for non playable characters and powerups  powerup to be an N\-P\-C as it moves as well. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_npc_a748bee1d096f0dc38a80f2db64186644}{\index{Npc@{Npc}!Npc@{Npc}}
+\index{Npc@{Npc}!Npc@{Npc}}
+\subsubsection[{Npc}]{\setlength{\rightskip}{0pt plus 5cm}Npc\-::\-Npc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_npc_a748bee1d096f0dc38a80f2db64186644}
+load all the textures from files 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_npc_a37c66a6ffa287ad975f42c1ab1d65310}{\index{Npc@{Npc}!rand\-Enemy@{rand\-Enemy}}
+\index{rand\-Enemy@{rand\-Enemy}!Npc@{Npc}}
+\subsubsection[{rand\-Enemy}]{\setlength{\rightskip}{0pt plus 5cm}void Npc\-::rand\-Enemy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_npc_a37c66a6ffa287ad975f42c1ab1d65310}
+
+
+Create a random enemy. 
+
+create Goomba
+
+create Koopa
+
+set animation properties \hypertarget{class_npc_a8ab8f95be18d4add56959b2620e51a2b}{\index{Npc@{Npc}!rand\-Power\-Up@{rand\-Power\-Up}}
+\index{rand\-Power\-Up@{rand\-Power\-Up}!Npc@{Npc}}
+\subsubsection[{rand\-Power\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void Npc\-::rand\-Power\-Up (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Texture \&}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_npc_a8ab8f95be18d4add56959b2620e51a2b}
+
+
+Create a random power up. 
+
+set animation properties 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_npc_8h}{Npc.\-h}\item 
+src/Npc.\-cpp\end{DoxyCompactItemize}

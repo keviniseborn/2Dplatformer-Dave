@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['gameplay',['GamePlay',['../class_game_play.html',1,'GamePlay'],['../class_game_play.html#a3e82b490b9780b0df24a88a9efc6709f',1,'GamePlay::GamePlay()']]],
+  ['gameplay_2ecpp',['GamePlay.cpp',['../_game_play_8cpp.html',1,'']]],
+  ['gameplay_2eh',['GamePlay.h',['../_game_play_8h.html',1,'']]],
+  ['getacc',['getAcc',['../class_movable.html#a73d65f64cb2167203ce4a202bc693b27',1,'Movable']]],
+  ['getanimdelay',['getAnimDelay',['../class_movable.html#ab6e4a29915ebae856e3cb74ffa51c66d',1,'Movable']]],
+  ['getbuff',['getBuff',['../class_player.html#af4ff40310af95ecbd9ba06b2108793a3',1,'Player']]],
+  ['getcollides',['getCollides',['../class_collidable.html#ad113f88a919c673d5218cee40a117eb9',1,'Collidable']]],
+  ['getcols',['getCols',['../class_movable.html#a80af67a0660d45e1088ed344f902ade1',1,'Movable']]],
+  ['getdestroyable',['getDestroyable',['../class_collidable.html#a152b6a93fce0b03b1bff9130512fd505',1,'Collidable']]],
+  ['getdirection',['getDirection',['../class_npc.html#aade5b490d2e23a8a53af6f44c1fc1905',1,'Npc']]],
+  ['getelasticity',['getElasticity',['../class_collidable.html#a8f451370b264406212293a85254b4607',1,'Collidable']]],
+  ['gethits',['getHits',['../class_block.html#a53401ddc379be16706e26b32b28d2272',1,'Block']]],
+  ['getimageheight',['getImageHeight',['../class_movable.html#a5ca927f75fb88aff35060ea7c3dc057f',1,'Movable']]],
+  ['getimagewidth',['getImageWidth',['../class_movable.html#a2fbc46d99e0fde3f8e6f91dee513ae64',1,'Movable']]],
+  ['getimass',['getiMass',['../class_collidable.html#a21f2f59df50b13723bfc7c167d3614d3',1,'Collidable']]],
+  ['getnormal',['getNormal',['../class_collidable.html#aee477493750640c92e2de6e447d26c44',1,'Collidable']]],
+  ['getplayable',['getPlayable',['../class_movable.html#a3d6756247c44c31646f99c9857ab06c9',1,'Movable']]],
+  ['getpos',['getPos',['../class_movable.html#ada07aadc68ac39a5252f27c2c25a46bb',1,'Movable']]],
+  ['getsize',['getSize',['../class_collidable.html#a6761b86e55d50be4f0a0c3a42bc81f81',1,'Collidable']]],
+  ['getspecial',['getSpecial',['../class_block.html#acdbaef798dfa2a7f65091d161bee908e',1,'Block']]],
+  ['getunitvector',['getUnitVector',['../class_vector2_d.html#a9ec064ffe930ae93d0f420390be126e8',1,'Vector2D']]],
+  ['getused',['getUsed',['../class_block.html#ae3dcd52cb3fbbfa2ffd1d9fd4e6e2b41',1,'Block']]],
+  ['getvel',['getVel',['../class_movable.html#a8c95174062940a2b728218b81881cf62',1,'Movable']]],
+  ['getx',['getX',['../class_vector2_d.html#a527601e47976bcfdac2520817bfee675',1,'Vector2D']]],
+  ['gety',['getY',['../class_vector2_d.html#a5b797fb62a3c21ced0cc8e27afd62f8b',1,'Vector2D']]]
+];

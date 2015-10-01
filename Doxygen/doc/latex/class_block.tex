@@ -1,0 +1,124 @@
+\hypertarget{class_block}{\section{Block Class Reference}
+\label{class_block}\index{Block@{Block}}
+}
+
+
+{\ttfamily \#include $<$Block.\-h$>$}
+
+Inheritance diagram for Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_block}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_block_a37658a946bf5067ad01d68d9ff086adc}{\hyperlink{class_block_a37658a946bf5067ad01d68d9ff086adc}{Block} ()}\label{class_block_a37658a946bf5067ad01d68d9ff086adc}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_block_a807c16fcd68933c3a82c4b66c967bc8c}{set\-Block} (int n, float x\-Pos, float y\-Pos, sf\-::\-Texture \&t)
+\begin{DoxyCompactList}\small\item\em set type of block \end{DoxyCompactList}\item 
+void \hyperlink{class_block_ab21be2cadeac40c67633643f3b04977a}{set\-Special} (bool s)
+\begin{DoxyCompactList}\small\item\em set if block is special \end{DoxyCompactList}\item 
+void \hyperlink{class_block_a16fe4b0dc9c8f27c28470e8344e5d83a}{set\-Hits} (int h)
+\begin{DoxyCompactList}\small\item\em set amounts of hits a destroyable block can take \end{DoxyCompactList}\item 
+void \hyperlink{class_block_aed9186020707930f3802e63421cc5ee0}{set\-Used} (bool u)
+\begin{DoxyCompactList}\small\item\em set if the block has been hit or not \end{DoxyCompactList}\item 
+\hypertarget{class_block_a53401ddc379be16706e26b32b28d2272}{int \hyperlink{class_block_a53401ddc379be16706e26b32b28d2272}{get\-Hits} ()}\label{class_block_a53401ddc379be16706e26b32b28d2272}
+
+\begin{DoxyCompactList}\small\item\em return amount of hits left on a block \end{DoxyCompactList}\item 
+\hypertarget{class_block_acdbaef798dfa2a7f65091d161bee908e}{bool \hyperlink{class_block_acdbaef798dfa2a7f65091d161bee908e}{get\-Special} ()}\label{class_block_acdbaef798dfa2a7f65091d161bee908e}
+
+\begin{DoxyCompactList}\small\item\em return if the block is special or not \end{DoxyCompactList}\item 
+\hypertarget{class_block_ae3dcd52cb3fbbfa2ffd1d9fd4e6e2b41}{bool \hyperlink{class_block_ae3dcd52cb3fbbfa2ffd1d9fd4e6e2b41}{get\-Used} ()}\label{class_block_ae3dcd52cb3fbbfa2ffd1d9fd4e6e2b41}
+
+\begin{DoxyCompactList}\small\item\em returns if the special block has been hit by player or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_block_a580bc16a3fc18eb382fed53c6a31c365}{class {\bfseries Movable}}\label{class_block_a580bc16a3fc18eb382fed53c6a31c365}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+class for the level 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_block_a807c16fcd68933c3a82c4b66c967bc8c}{\index{Block@{Block}!set\-Block@{set\-Block}}
+\index{set\-Block@{set\-Block}!Block@{Block}}
+\subsubsection[{set\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void Block\-::set\-Block (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{float}]{x\-Pos, }
+\item[{float}]{y\-Pos, }
+\item[{sf\-::\-Texture \&}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_block_a807c16fcd68933c3a82c4b66c967bc8c}
+
+
+set type of block 
+
+set image properties (all blocks same size)
+
+Checks value entered in function and creates a block depending on the integer value 
+\begin{DoxyParams}{Parameters}
+{\em t} & set block function \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_block_a16fe4b0dc9c8f27c28470e8344e5d83a}{\index{Block@{Block}!set\-Hits@{set\-Hits}}
+\index{set\-Hits@{set\-Hits}!Block@{Block}}
+\subsubsection[{set\-Hits}]{\setlength{\rightskip}{0pt plus 5cm}void Block\-::set\-Hits (
+\begin{DoxyParamCaption}
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}}\label{class_block_a16fe4b0dc9c8f27c28470e8344e5d83a}
+
+
+set amounts of hits a destroyable block can take 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & set hits for block \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_block_ab21be2cadeac40c67633643f3b04977a}{\index{Block@{Block}!set\-Special@{set\-Special}}
+\index{set\-Special@{set\-Special}!Block@{Block}}
+\subsubsection[{set\-Special}]{\setlength{\rightskip}{0pt plus 5cm}void Block\-::set\-Special (
+\begin{DoxyParamCaption}
+\item[{bool}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_block_ab21be2cadeac40c67633643f3b04977a}
+
+
+set if block is special 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & set if the block is special \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_block_aed9186020707930f3802e63421cc5ee0}{\index{Block@{Block}!set\-Used@{set\-Used}}
+\index{set\-Used@{set\-Used}!Block@{Block}}
+\subsubsection[{set\-Used}]{\setlength{\rightskip}{0pt plus 5cm}void Block\-::set\-Used (
+\begin{DoxyParamCaption}
+\item[{bool}]{u}
+\end{DoxyParamCaption}
+)}}\label{class_block_aed9186020707930f3802e63421cc5ee0}
+
+
+set if the block has been hit or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & set if the block has been hit \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_block_8h}{Block.\-h}\item 
+src/Block.\-cpp\end{DoxyCompactItemize}

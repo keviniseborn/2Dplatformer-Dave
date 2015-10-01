@@ -1,0 +1,130 @@
+\hypertarget{class_player}{\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+}
+
+
+{\ttfamily \#include $<$Player.\-h$>$}
+
+Inheritance diagram for Player\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a3c2e7e40fe2018229d44168bd484c182}{handle\-Input} ()
+\begin{DoxyCompactList}\small\item\em function for handling the input of the player \end{DoxyCompactList}\item 
+\hypertarget{class_player_a12121c992641a4f456e5546b735c070e}{void \hyperlink{class_player_a12121c992641a4f456e5546b735c070e}{set\-Buff} (int b, bool t)}\label{class_player_a12121c992641a4f456e5546b735c070e}
+
+\begin{DoxyCompactList}\small\item\em function to set the players buff -\/ integer for which buff and bool on or off \end{DoxyCompactList}\item 
+\hypertarget{class_player_af4ff40310af95ecbd9ba06b2108793a3}{int \hyperlink{class_player_af4ff40310af95ecbd9ba06b2108793a3}{get\-Buff} ()}\label{class_player_af4ff40310af95ecbd9ba06b2108793a3}
+
+\begin{DoxyCompactList}\small\item\em returns what type of buff player has -\/ 0 = none, 1 = shroom, 2 = star \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Direction} \{ \\*
+{\bfseries left}, 
+{\bfseries right}, 
+{\bfseries jump}, 
+{\bfseries still}, 
+\\*
+{\bfseries crouch}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_player_a5696d1d82851cd6dfd5dbe68b76bfdb1}{sf\-::\-Texture {\bfseries left\-Text}}\label{class_player_a5696d1d82851cd6dfd5dbe68b76bfdb1}
+
+\item 
+\hypertarget{class_player_a75ea81350746d65f2290eb487ed648e3}{sf\-::\-Texture {\bfseries right\-Text}}\label{class_player_a75ea81350746d65f2290eb487ed648e3}
+
+\item 
+\hypertarget{class_player_a304268d8b7f798b2970f815a33d8abe5}{sf\-::\-Texture {\bfseries jump\-Text}}\label{class_player_a304268d8b7f798b2970f815a33d8abe5}
+
+\item 
+\hypertarget{class_player_a5a930a925138d2fbaae4b1da90fb6894}{sf\-::\-Texture {\bfseries still\-Text}}\label{class_player_a5a930a925138d2fbaae4b1da90fb6894}
+
+\item 
+\hypertarget{class_player_aac16f632a3e1a8de17e9c8769edf207b}{sf\-::\-Texture \hyperlink{class_player_aac16f632a3e1a8de17e9c8769edf207b}{crouch\-Text}}\label{class_player_aac16f632a3e1a8de17e9c8769edf207b}
+
+\begin{DoxyCompactList}\small\item\em different player textures \end{DoxyCompactList}\item 
+\hypertarget{class_player_a93eaebe50e6ab8a19c35138b4c60f60c}{bool \hyperlink{class_player_a93eaebe50e6ab8a19c35138b4c60f60c}{playing}}\label{class_player_a93eaebe50e6ab8a19c35138b4c60f60c}
+
+\begin{DoxyCompactList}\small\item\em is player playing \end{DoxyCompactList}\item 
+\hypertarget{class_player_ad50788f8294f0f7acfd03f056f460679}{sf\-::\-Sound\-Buffer \hyperlink{class_player_ad50788f8294f0f7acfd03f056f460679}{soundbuffer}}\label{class_player_ad50788f8294f0f7acfd03f056f460679}
+
+\begin{DoxyCompactList}\small\item\em buffer for jump sound \end{DoxyCompactList}\item 
+\hypertarget{class_player_a350d742a163059759e74da611545aa32}{sf\-::\-Sound \hyperlink{class_player_a350d742a163059759e74da611545aa32}{jump\-Sound}}\label{class_player_a350d742a163059759e74da611545aa32}
+
+\begin{DoxyCompactList}\small\item\em jump sound \end{DoxyCompactList}\item 
+\hypertarget{class_player_a5991e5d8296b585cdd13bc6c22f40f23}{bool {\bfseries star\-Buff}}\label{class_player_a5991e5d8296b585cdd13bc6c22f40f23}
+
+\item 
+\hypertarget{class_player_a2487d863fc3d90ad6bac8cd273136e0f}{bool \hyperlink{class_player_a2487d863fc3d90ad6bac8cd273136e0f}{shroom\-Buff}}\label{class_player_a2487d863fc3d90ad6bac8cd273136e0f}
+
+\begin{DoxyCompactList}\small\item\em if the player has a powerup \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\textbackslash{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}
+
+
+default constructor 
+
+set players basic properties
+
+load textures from file
+
+Load the sound for jumping
+
+set the sprites texture and scale
+
+set image height/width and size (for collision and animation)
+
+more properties for animation 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_a3c2e7e40fe2018229d44168bd484c182}{\index{Player@{Player}!handle\-Input@{handle\-Input}}
+\index{handle\-Input@{handle\-Input}!Player@{Player}}
+\subsubsection[{handle\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::handle\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_a3c2e7e40fe2018229d44168bd484c182}
+
+
+function for handling the input of the player 
+
+Function handles all player input Changes velocity on key-\/press Changes the texture and animation properties depending on which key you press
+
+$<$ if player pushes right
+
+$<$ change velocity
+
+$<$ change velocity
+
+$<$ set texture to be right
+
+$<$ set animate properties of new texture
+
+$<$ set animating to be true 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_player_8h}{Player.\-h}\item 
+src/\hyperlink{_player_8cpp}{Player.\-cpp}\end{DoxyCompactItemize}

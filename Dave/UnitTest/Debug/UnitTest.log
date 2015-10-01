@@ -1,0 +1,15 @@
+﻿Build started 12/03/2014 09:27:10.
+     1>Project "H:\Year 2\IMAT 2605 - C++\CourseWork - 11th March\Coursework\Dave\UnitTest\UnitTest.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"../../SFML-2.0/include" /I"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\UnitTest\include" /I../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\UnitTest.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt unittest1.cpp
+         unittest1.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Year 2\IMAT 2605 - C++\CourseWork - 11th March\Coursework\Dave\Debug\UnitTest.dll" /INCREMENTAL /NOLOGO /LIBPATH:"../../SFML-2.0/lib" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\UnitTest\lib" "sfml-audio-d.lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" Block.obj Collidable.obj Collision.obj GamePlay.obj Movable.obj Npc.obj Player.obj Vector2D.obj main.obj kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\Year 2\IMAT 2605 - C++\CourseWork - 11th March\Coursework\Dave\Debug\UnitTest.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Year 2\IMAT 2605 - C++\CourseWork - 11th March\Coursework\Dave\Debug\UnitTest.lib" /MACHINE:X86 /DLL Debug\stdafx.obj
+         Debug\unittest1.obj
+            Creating library H:\Year 2\IMAT 2605 - C++\CourseWork - 11th March\Coursework\Dave\Debug\UnitTest.lib and object H:\Year 2\IMAT 2605 - C++\CourseWork - 11th March\Coursework\Dave\Debug\UnitTest.exp
+         UnitTest.vcxproj -> H:\Year 2\IMAT 2605 - C++\CourseWork - 11th March\Coursework\Dave\Debug\UnitTest.dll
+     1>Done Building Project "H:\Year 2\IMAT 2605 - C++\CourseWork - 11th March\Coursework\Dave\UnitTest\UnitTest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.25

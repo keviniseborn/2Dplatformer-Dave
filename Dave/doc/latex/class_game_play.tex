@@ -1,0 +1,494 @@
+\hypertarget{class_game_play}{\section{Game\-Play Class Reference}
+\label{class_game_play}\index{Game\-Play@{Game\-Play}}
+}
+
+
+{\ttfamily \#include $<$Game\-Play.\-h$>$}
+
+Inheritance diagram for Game\-Play\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_play}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_play_a3e82b490b9780b0df24a88a9efc6709f}{\hyperlink{class_game_play_a3e82b490b9780b0df24a88a9efc6709f}{Game\-Play} ()}\label{class_game_play_a3e82b490b9780b0df24a88a9efc6709f}
+
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_game_play_aeac8436214d80bb44f4a3f41ffed6314}{init} ()
+\begin{DoxyCompactList}\small\item\em initialise function \end{DoxyCompactList}\item 
+void \hyperlink{class_game_play_a32f780550fae20146e6d6bf844ee3eae}{update} (float time)
+\begin{DoxyCompactList}\small\item\em Game update function. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_play_adc7a40e331c11d6484b4fe625da96156}{collision\-Handling} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_collision}{Collision} handling function. \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_aa3e1d8529f943df0a459a08546984681}{virtual void \hyperlink{class_game_play_aa3e1d8529f943df0a459a08546984681}{draw} (sf\-::\-Render\-Target \&target, sf\-::\-Render\-States states) const }\label{class_game_play_aa3e1d8529f943df0a459a08546984681}
+
+\begin{DoxyCompactList}\small\item\em Draw function. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_play_a474ed6cf3fcfd1426bfed9c88f24c83c}{screen\-Movement} (\hyperlink{class_player}{Player} \&p, sf\-::\-View \&v, sf\-::\-Sprite \&s)
+\begin{DoxyCompactList}\small\item\em function for screen views \end{DoxyCompactList}\item 
+void \hyperlink{class_game_play_a8e2237eb9247de338d23c832a7a3e48d}{level\-Finish} (float time)
+\begin{DoxyCompactList}\small\item\em Level finish check function. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_play_af855db71ec71c4910376ae3cb23fd6fb}{load\-Level} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Level loading function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Messages} \{ \\*
+{\bfseries Title}, 
+{\bfseries Lives}, 
+{\bfseries Score}, 
+{\bfseries Time\-Score}, 
+\\*
+{\bfseries Final\-Score}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player}{Player} \hyperlink{class_game_play_a08dc6e920f9c76ce54be4e5d2095851b}{player}
+\begin{DoxyCompactList}\small\item\em game play variables \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a69aedc07836f2a6630702874e93eec47}{\hyperlink{class_npc}{Npc} \hyperlink{class_game_play_a69aedc07836f2a6630702874e93eec47}{npc\-Holder}}\label{class_game_play_a69aedc07836f2a6630702874e93eec47}
+
+\begin{DoxyCompactList}\small\item\em holder for the npc object \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_ab0d25bacfb204bb2afa6763ef9a75ff7}{int \hyperlink{class_game_play_ab0d25bacfb204bb2afa6763ef9a75ff7}{number\-Of\-Npc}}\label{class_game_play_ab0d25bacfb204bb2afa6763ef9a75ff7}
+
+\begin{DoxyCompactList}\small\item\em number of N\-P\-C's in the game \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_af6a6d6655b44e08772197ff964992560}{bool \hyperlink{class_game_play_af6a6d6655b44e08772197ff964992560}{in\-Play}}\label{class_game_play_af6a6d6655b44e08772197ff964992560}
+
+\begin{DoxyCompactList}\small\item\em if the game is currently in play \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_acbc454f0ef89136874c5cea74064aa6f}{std\-::vector$<$ \hyperlink{class_npc}{Npc} $>$ \hyperlink{class_game_play_acbc454f0ef89136874c5cea74064aa6f}{npc}}\label{class_game_play_acbc454f0ef89136874c5cea74064aa6f}
+
+\begin{DoxyCompactList}\small\item\em vector of N\-P\-C objects \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a8fc2705e520ebb05be8c7e69c318f232}{std\-::vector$<$ \hyperlink{class_npc}{Npc} $>$ \hyperlink{class_game_play_a8fc2705e520ebb05be8c7e69c318f232}{power\-Ups}}\label{class_game_play_a8fc2705e520ebb05be8c7e69c318f232}
+
+\begin{DoxyCompactList}\small\item\em Vector of Power U\-Ps. \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_aa33f712517e35db81403bfb7a18ad377}{\hyperlink{class_collision}{Collision} \hyperlink{class_game_play_aa33f712517e35db81403bfb7a18ad377}{collision}}\label{class_game_play_aa33f712517e35db81403bfb7a18ad377}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_collision}{Collision} object. \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_abfaadad7bfa0cbb644ff2caf437e97ae}{unsigned int {\bfseries Screen\-Width}}\label{class_game_play_abfaadad7bfa0cbb644ff2caf437e97ae}
+
+\item 
+\hypertarget{class_game_play_a56097b45197c2ab545732fc3817bf687}{unsigned int \hyperlink{class_game_play_a56097b45197c2ab545732fc3817bf687}{screen\-Height}}\label{class_game_play_a56097b45197c2ab545732fc3817bf687}
+
+\begin{DoxyCompactList}\small\item\em screen width and screen height \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a1b2dc1f6a0cb155b184f66912ec24fc3}{sf\-::\-Texture \hyperlink{class_game_play_a1b2dc1f6a0cb155b184f66912ec24fc3}{background\-Text}}\label{class_game_play_a1b2dc1f6a0cb155b184f66912ec24fc3}
+
+\begin{DoxyCompactList}\small\item\em background and castle variables \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a851c000ae34c29852abb63379bc02549}{sf\-::\-Sprite {\bfseries background\-Sprite}}\label{class_game_play_a851c000ae34c29852abb63379bc02549}
+
+\item 
+\hypertarget{class_game_play_aecfc71ab7e4d1b0625ae8eda94b29f98}{sf\-::\-Texture {\bfseries castle\-Texture}}\label{class_game_play_aecfc71ab7e4d1b0625ae8eda94b29f98}
+
+\item 
+\hypertarget{class_game_play_a1bb10da53412b68d2d4f54db073f4d72}{sf\-::\-Sprite {\bfseries castle\-Sprite}}\label{class_game_play_a1bb10da53412b68d2d4f54db073f4d72}
+
+\item 
+\hypertarget{class_game_play_a765d7c61edbed2971d63e77e81a89f49}{sf\-::\-Texture {\bfseries shroom\-Text}}\label{class_game_play_a765d7c61edbed2971d63e77e81a89f49}
+
+\item 
+\hypertarget{class_game_play_a030b3b8f41d4978c8627dc9c143d7c36}{sf\-::\-Texture {\bfseries star\-Text}}\label{class_game_play_a030b3b8f41d4978c8627dc9c143d7c36}
+
+\item 
+\hypertarget{class_game_play_a56313f8852fd827b287dd23042834bbb}{sf\-::\-View \hyperlink{class_game_play_a56313f8852fd827b287dd23042834bbb}{main\-View}}\label{class_game_play_a56313f8852fd827b287dd23042834bbb}
+
+\begin{DoxyCompactList}\small\item\em view variables \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_ab8b905f9011ae5eb4084a8c2b71aab86}{sf\-::\-View {\bfseries title\-View}}\label{class_game_play_ab8b905f9011ae5eb4084a8c2b71aab86}
+
+\item 
+\hypertarget{class_game_play_a8c84893f2b8892e1a6b14862eab6226a}{sf\-::\-View {\bfseries score\-View}}\label{class_game_play_a8c84893f2b8892e1a6b14862eab6226a}
+
+\item 
+\hypertarget{class_game_play_a4fe13e5df316c1653ce9478f6093a18d}{sf\-::\-View {\bfseries lives\-View}}\label{class_game_play_a4fe13e5df316c1653ce9478f6093a18d}
+
+\item 
+\hypertarget{class_game_play_aab47a53b15e8fe155e504e45b8dcc86b}{sf\-::\-Font \hyperlink{class_game_play_aab47a53b15e8fe155e504e45b8dcc86b}{S\-M\-Font}}\label{class_game_play_aab47a53b15e8fe155e504e45b8dcc86b}
+
+\begin{DoxyCompactList}\small\item\em text variables \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_aedc5312f7a7c45b47340c0860a44dbbd}{sf\-::\-Text {\bfseries message} \mbox{[}5\mbox{]}}\label{class_game_play_aedc5312f7a7c45b47340c0860a44dbbd}
+
+\item 
+\hypertarget{class_game_play_afff7c793e76f9f6a96e8db58c15a1537}{int {\bfseries score}}\label{class_game_play_afff7c793e76f9f6a96e8db58c15a1537}
+
+\item 
+\hypertarget{class_game_play_a134f4b536cb27725ed3bfffa0da7f4ef}{int {\bfseries lives}}\label{class_game_play_a134f4b536cb27725ed3bfffa0da7f4ef}
+
+\item 
+\hypertarget{class_game_play_a32aa78dc4bd232cb1119c66399dcb125}{int {\bfseries time\-Score}}\label{class_game_play_a32aa78dc4bd232cb1119c66399dcb125}
+
+\item 
+\hypertarget{class_game_play_a9e2d1f5136cf7eb12d8d7c56d54d3c0b}{int {\bfseries final\-Score}}\label{class_game_play_a9e2d1f5136cf7eb12d8d7c56d54d3c0b}
+
+\item 
+\hypertarget{class_game_play_ad3e56c63e9689496eb999bf260d85409}{int {\bfseries level}}\label{class_game_play_ad3e56c63e9689496eb999bf260d85409}
+
+\item 
+\hypertarget{class_game_play_a8f3424d1523e4a2be8593883a3fd198f}{std\-::string {\bfseries String\-Message} \mbox{[}5\mbox{]}}\label{class_game_play_a8f3424d1523e4a2be8593883a3fd198f}
+
+\item 
+std\-::vector$<$ std\-::vector$<$ int $>$ $>$ \hyperlink{class_game_play_aa8ae61ae157cacf1be80773aa9fde3b0}{layout}
+\begin{DoxyCompactList}\small\item\em level loading variables \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a87c503c3b96f4158718e4765d37464ce}{std\-::vector$<$ \hyperlink{class_block}{Block} $>$ \hyperlink{class_game_play_a87c503c3b96f4158718e4765d37464ce}{row\-Vector}}\label{class_game_play_a87c503c3b96f4158718e4765d37464ce}
+
+\begin{DoxyCompactList}\small\item\em 1\-D vector of blocks to load into blocks vector \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a28a01697eaf1aff08b9d7ac0106def07}{std\-::vector$<$ std\-::vector$<$ \hyperlink{class_block}{Block} $>$ $>$ \hyperlink{class_game_play_a28a01697eaf1aff08b9d7ac0106def07}{blocks}}\label{class_game_play_a28a01697eaf1aff08b9d7ac0106def07}
+
+\begin{DoxyCompactList}\small\item\em 2\-D vector of blocks \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a97ddf6ce01d8f315c968136f97fb7ec9}{sf\-::\-Texture {\bfseries floor\-Texture}}\label{class_game_play_a97ddf6ce01d8f315c968136f97fb7ec9}
+
+\item 
+\hypertarget{class_game_play_acad50fbec26ac840a3b7a9610eb949f4}{sf\-::\-Texture {\bfseries normal\-Texture}}\label{class_game_play_acad50fbec26ac840a3b7a9610eb949f4}
+
+\item 
+\hypertarget{class_game_play_a1bfe51d46513cab9ed1419b51643e77a}{sf\-::\-Texture {\bfseries break\-Texture}}\label{class_game_play_a1bfe51d46513cab9ed1419b51643e77a}
+
+\item 
+\hypertarget{class_game_play_a4fd92145ae1d1b65ac4a933ed22855de}{sf\-::\-Texture {\bfseries power\-Up\-Texture}}\label{class_game_play_a4fd92145ae1d1b65ac4a933ed22855de}
+
+\item 
+\hypertarget{class_game_play_a9cb665d35b995eb01658b7061dcfd9a2}{sf\-::\-Texture \hyperlink{class_game_play_a9cb665d35b995eb01658b7061dcfd9a2}{used\-Block\-Texture}}\label{class_game_play_a9cb665d35b995eb01658b7061dcfd9a2}
+
+\begin{DoxyCompactList}\small\item\em textures for special objects \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a5e30dd99fa90fd0972f6061b7d96fe44}{int \hyperlink{class_game_play_a5e30dd99fa90fd0972f6061b7d96fe44}{number\-Of\-Blocks}}\label{class_game_play_a5e30dd99fa90fd0972f6061b7d96fe44}
+
+\begin{DoxyCompactList}\small\item\em Number of blocks in the level. \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_a46c26ce716c6b1345576ceca7682883e}{float \hyperlink{class_game_play_a46c26ce716c6b1345576ceca7682883e}{block\-Scale}}\label{class_game_play_a46c26ce716c6b1345576ceca7682883e}
+
+\begin{DoxyCompactList}\small\item\em scale of blocks \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_af336a085728fd157bb3ddb72a9349ae2}{sf\-::\-Sound\-Buffer \hyperlink{class_game_play_af336a085728fd157bb3ddb72a9349ae2}{backgroundbuffer}}\label{class_game_play_af336a085728fd157bb3ddb72a9349ae2}
+
+\begin{DoxyCompactList}\small\item\em Sound variables. \end{DoxyCompactList}\item 
+\hypertarget{class_game_play_adcb91b78525022f0f29ec60fec06faa4}{sf\-::\-Sound\-Buffer {\bfseries game\-Over\-Buffer}}\label{class_game_play_adcb91b78525022f0f29ec60fec06faa4}
+
+\item 
+\hypertarget{class_game_play_a82e90b0bfce0443471b54943a11f254d}{sf\-::\-Sound\-Buffer {\bfseries coin\-Buffer}}\label{class_game_play_a82e90b0bfce0443471b54943a11f254d}
+
+\item 
+\hypertarget{class_game_play_a086bd4e522cc7f107aa8729da37f0d0f}{sf\-::\-Sound\-Buffer {\bfseries win\-Buffer}}\label{class_game_play_a086bd4e522cc7f107aa8729da37f0d0f}
+
+\item 
+\hypertarget{class_game_play_a15bb2d831db86a7cb66fd89568971b63}{sf\-::\-Sound\-Buffer {\bfseries block\-Break\-Buffer}}\label{class_game_play_a15bb2d831db86a7cb66fd89568971b63}
+
+\item 
+\hypertarget{class_game_play_ab58ca928fcddef9ce2739ea5b68f074d}{sf\-::\-Sound\-Buffer {\bfseries power\-Up\-Block\-Buffer}}\label{class_game_play_ab58ca928fcddef9ce2739ea5b68f074d}
+
+\item 
+\hypertarget{class_game_play_a0954ad834629cf6acb1235562c0e8d79}{sf\-::\-Sound\-Buffer {\bfseries power\-Up\-Buffer}}\label{class_game_play_a0954ad834629cf6acb1235562c0e8d79}
+
+\item 
+\hypertarget{class_game_play_a8dad752106ccef7498c8cdec564c3640}{sf\-::\-Sound {\bfseries game\-Over\-Sound}}\label{class_game_play_a8dad752106ccef7498c8cdec564c3640}
+
+\item 
+\hypertarget{class_game_play_aff2e8ec6a84bde0974943682715e2ce0}{sf\-::\-Sound {\bfseries coin\-Sound}}\label{class_game_play_aff2e8ec6a84bde0974943682715e2ce0}
+
+\item 
+\hypertarget{class_game_play_aca7e389685b4fe52cacd43da0c5f6188}{sf\-::\-Sound {\bfseries win\-Sound}}\label{class_game_play_aca7e389685b4fe52cacd43da0c5f6188}
+
+\item 
+\hypertarget{class_game_play_a1c2c6762b82ae0a369403a9902404529}{sf\-::\-Sound {\bfseries block\-Break\-Sound}}\label{class_game_play_a1c2c6762b82ae0a369403a9902404529}
+
+\item 
+\hypertarget{class_game_play_a7967804865ed893966d7cda335f255bf}{sf\-::\-Sound {\bfseries power\-Up\-Block\-Sound}}\label{class_game_play_a7967804865ed893966d7cda335f255bf}
+
+\item 
+\hypertarget{class_game_play_afd382f7d108792a43e5223e43e498653}{sf\-::\-Sound {\bfseries power\-Up\-Sound}}\label{class_game_play_afd382f7d108792a43e5223e43e498653}
+
+\item 
+\hypertarget{class_game_play_a26196da953ca24d8bbd0a669c99777b4}{sf\-::\-Music {\bfseries background\-Music}}\label{class_game_play_a26196da953ca24d8bbd0a669c99777b4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the game play events 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_play_adc7a40e331c11d6484b4fe625da96156}{\index{Game\-Play@{Game\-Play}!collision\-Handling@{collision\-Handling}}
+\index{collision\-Handling@{collision\-Handling}!GamePlay@{Game\-Play}}
+\subsubsection[{collision\-Handling}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Play\-::collision\-Handling (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_play_adc7a40e331c11d6484b4fe625da96156}
+
+
+\hyperlink{class_collision}{Collision} handling function. 
+
+\hyperlink{class_collision}{Collision} between npcs and player
+
+$<$ if npc's still exist
+
+$<$ if there is a collision between player and the npc
+
+$<$ calculate collision normal
+
+$<$ if the N\-P\-C is an enemy
+
+$<$ if player lands on top of npc
+
+$<$ resolve collision
+
+$<$ reduce lives by 1
+
+$<$ remove player buffs
+
+$<$ remove player buffs
+
+$<$ change pitch of music back
+
+$<$ reset position of player
+
+$<$ set screen center on player
+
+$<$ if the npc's normal is 1
+
+$<$ make player bounce a little bit
+
+$<$ erase npc from vector
+
+$<$ increase score by 50
+
+$<$ if the N\-P\-C is a shroom
+
+if the player falls down
+
+$<$ reduce lives by 1
+
+$<$ reset players position
+
+$<$ set screen center on player
+
+$<$ remove player buffs
+
+$<$ remove player buffs
+
+$<$ change pitch of music back
+
+$<$ If player has collided with a block
+
+$<$ calculate the collision normal
+
+$<$ resolve the collision
+
+$<$ if the player bounced ontop and the block is destroyable
+
+$<$ and the blocks hits left is 0
+
+$<$ erase block
+
+$<$ grand 25 score
+
+$<$ else reduce hits by 1
+
+$<$ if player hits from underneat on a special block
+
+$<$ change block to be used
+
+$<$ increase score
+
+$<$ set hits left to 0
+
+$<$ if there is a collision between an npc and a block
+
+$<$ calculate collision normal
+
+$<$ resolve the collision
+
+depending on which side the npc hits, change it's velocity \hypertarget{class_game_play_aeac8436214d80bb44f4a3f41ffed6314}{\index{Game\-Play@{Game\-Play}!init@{init}}
+\index{init@{init}!GamePlay@{Game\-Play}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Play\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_play_aeac8436214d80bb44f4a3f41ffed6314}
+
+
+initialise function 
+
+set the variable in\-Play to be true
+
+Set the required variables for player
+
+load level function to load all the blocks
+
+Create the enemy N\-P\-C's and push them back onto the npc vector
+
+set the N\-P\-C's velocity and playability
+
+load background and finish-\/point castle
+
+Set the main view properties
+
+initialise the messages
+
+load font for text
+
+set font, character size and assign the message string to the variable
+
+position each message on the screen
+
+Initialise the sound variables
+
+Background music
+
+Win Sound
+
+Game Over Sound
+
+Coin Sound
+
+\hyperlink{class_block}{Block} Breaking Sound
+
+Power Up \hyperlink{class_block}{Block} Sound
+
+Power Up Sound
+
+assign remaining game play \hypertarget{class_game_play_a8e2237eb9247de338d23c832a7a3e48d}{\index{Game\-Play@{Game\-Play}!level\-Finish@{level\-Finish}}
+\index{level\-Finish@{level\-Finish}!GamePlay@{Game\-Play}}
+\subsubsection[{level\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Play\-::level\-Finish (
+\begin{DoxyParamCaption}
+\item[{float}]{time}
+\end{DoxyParamCaption}
+)}}\label{class_game_play_a8e2237eb9247de338d23c832a7a3e48d}
+
+
+Level finish check function. 
+
+$<$ if game is not inplay
+
+$<$ calculate final score
+
+$<$include remaining lives in score
+
+$<$update final score
+
+$<$ if the player reaches the end
+
+$<$ stop the player from moving
+
+$<$ erase the npc vector
+
+$<$ set position of message in correct location
+
+$<$ erase the npc vector
+
+$<$ if the player hits R
+
+$<$ set position of message in correct location
+
+$<$ if the player hits R
+
+$<$ change inplay to be true
+
+$<$ erase the npc vector
+
+$<$ re initialise the game 
+\begin{DoxyParams}{Parameters}
+{\em time} & level finish function \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_play_af855db71ec71c4910376ae3cb23fd6fb}{\index{Game\-Play@{Game\-Play}!load\-Level@{load\-Level}}
+\index{load\-Level@{load\-Level}!GamePlay@{Game\-Play}}
+\subsubsection[{load\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Play\-::load\-Level (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_game_play_af855db71ec71c4910376ae3cb23fd6fb}
+
+
+Level loading function. 
+
+set variables to be 0
+
+$<$ vector for pushing into the 2d Vector \char`\"{}blocks\char`\"{}
+
+$<$ rows and cols
+
+$<$ current block to push into the row vector 
+\begin{DoxyParams}{Parameters}
+{\em filename} & level loading function \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_play_a474ed6cf3fcfd1426bfed9c88f24c83c}{\index{Game\-Play@{Game\-Play}!screen\-Movement@{screen\-Movement}}
+\index{screen\-Movement@{screen\-Movement}!GamePlay@{Game\-Play}}
+\subsubsection[{screen\-Movement}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Play\-::screen\-Movement (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{p, }
+\item[{sf\-::\-View \&}]{v, }
+\item[{sf\-::\-Sprite \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_game_play_a474ed6cf3fcfd1426bfed9c88f24c83c}
+
+
+function for screen views 
+
+screen move right
+
+screen move left
+
+screen move up
+
+screen move down
+
+keeps background static
+
+keeps messages in place 
+\begin{DoxyParams}{Parameters}
+{\em s} & screen movement function to keep in track with player \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_play_a32f780550fae20146e6d6bf844ee3eae}{\index{Game\-Play@{Game\-Play}!update@{update}}
+\index{update@{update}!GamePlay@{Game\-Play}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Play\-::update (
+\begin{DoxyParamCaption}
+\item[{float}]{time}
+\end{DoxyParamCaption}
+)}}\label{class_game_play_a32f780550fae20146e6d6bf844ee3eae}
+
+
+Game update function. 
+
+Decrease the time bonus score over time
+
+npc update functions
+
+$<$ animate the npc
+
+$<$ integrate the npc
+
+integrate / animate player object
+
+$<$ if game is inplay then the player can move
+
+$<$ collision handling function call
+
+$<$ screen movement function call
+
+update the score messages with the actual score
+
+if player is dead, erase all npc's and run the init function again
+
+level finish function call (checks if level has been complete) 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game_play_aa8ae61ae157cacf1be80773aa9fde3b0}{\index{Game\-Play@{Game\-Play}!layout@{layout}}
+\index{layout@{layout}!GamePlay@{Game\-Play}}
+\subsubsection[{layout}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<$int$>$ $>$ Game\-Play\-::layout\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_play_aa8ae61ae157cacf1be80773aa9fde3b0}
+
+
+level loading variables 
+
+vector of ints for block layout \hypertarget{class_game_play_a08dc6e920f9c76ce54be4e5d2095851b}{\index{Game\-Play@{Game\-Play}!player@{player}}
+\index{player@{player}!GamePlay@{Game\-Play}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} Game\-Play\-::player\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_play_a08dc6e920f9c76ce54be4e5d2095851b}
+
+
+game play variables 
+
+player object 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_game_play_8h}{Game\-Play.\-h}\item 
+src/\hyperlink{_game_play_8cpp}{Game\-Play.\-cpp}\end{DoxyCompactItemize}

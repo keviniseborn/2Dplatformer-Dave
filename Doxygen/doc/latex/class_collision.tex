@@ -1,0 +1,97 @@
+\hypertarget{class_collision}{\section{Collision Class Reference}
+\label{class_collision}\index{Collision@{Collision}}
+}
+
+
+{\ttfamily \#include $<$Collision.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_collision_aea8004fbf48b79b5db7b784688b23788}{\hyperlink{class_collision_aea8004fbf48b79b5db7b784688b23788}{Collision} ()}\label{class_collision_aea8004fbf48b79b5db7b784688b23788}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_collision_a9e0c3a25faa3b248ada31d1b1ed3ca1f}{resolve} (\hyperlink{class_collidable}{Collidable} \&p, \hyperlink{class_collidable}{Collidable} \&b)
+\begin{DoxyCompactList}\small\item\em resolve collision function \end{DoxyCompactList}\item 
+bool \hyperlink{class_collision_a088f8187d085887c6d9ae22a036ba668}{A\-A\-B\-Bvs\-A\-A\-B\-B} (\hyperlink{class_collidable}{Collidable} \&p, \hyperlink{class_collidable}{Collidable} \&b)
+\begin{DoxyCompactList}\small\item\em A\-A\-B\-B vs A\-A\-B\-B collision detection function. \end{DoxyCompactList}\item 
+void \hyperlink{class_collision_a9a482367fa81abb763f83daf22127d4e}{collision\-Normal} (\hyperlink{class_collidable}{Collidable} \&p, \hyperlink{class_collidable}{Collidable} \&b)
+\begin{DoxyCompactList}\small\item\em calculate collision normal function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the collision events in the game 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_collision_a088f8187d085887c6d9ae22a036ba668}{\index{Collision@{Collision}!A\-A\-B\-Bvs\-A\-A\-B\-B@{A\-A\-B\-Bvs\-A\-A\-B\-B}}
+\index{A\-A\-B\-Bvs\-A\-A\-B\-B@{A\-A\-B\-Bvs\-A\-A\-B\-B}!Collision@{Collision}}
+\subsubsection[{A\-A\-B\-Bvs\-A\-A\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision\-::\-A\-A\-B\-Bvs\-A\-A\-B\-B (
+\begin{DoxyParamCaption}
+\item[{{\bf Collidable} \&}]{p, }
+\item[{{\bf Collidable} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{class_collision_a088f8187d085887c6d9ae22a036ba668}
+
+
+A\-A\-B\-B vs A\-A\-B\-B collision detection function. 
+
+checks if an object hasn't collided, returns true if all checks fail 
+\begin{DoxyParams}{Parameters}
+{\em b} & Checking for A\-A\-B\-B collision \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_collision_a9a482367fa81abb763f83daf22127d4e}{\index{Collision@{Collision}!collision\-Normal@{collision\-Normal}}
+\index{collision\-Normal@{collision\-Normal}!Collision@{Collision}}
+\subsubsection[{collision\-Normal}]{\setlength{\rightskip}{0pt plus 5cm}void Collision\-::collision\-Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Collidable} \&}]{p, }
+\item[{{\bf Collidable} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{class_collision_a9a482367fa81abb763f83daf22127d4e}
+
+
+calculate collision normal function 
+
+Calculate the collision normal from the manifold of 2 objects intersecting 
+\begin{DoxyParams}{Parameters}
+{\em b} & Calculating A\-A\-B\-B collision normal \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_collision_a9e0c3a25faa3b248ada31d1b1ed3ca1f}{\index{Collision@{Collision}!resolve@{resolve}}
+\index{resolve@{resolve}!Collision@{Collision}}
+\subsubsection[{resolve}]{\setlength{\rightskip}{0pt plus 5cm}void Collision\-::resolve (
+\begin{DoxyParamCaption}
+\item[{{\bf Collidable} \&}]{p, }
+\item[{{\bf Collidable} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{class_collision_a9e0c3a25faa3b248ada31d1b1ed3ca1f}
+
+
+resolve collision function 
+
+normal calculations for position correction
+
+position correction
+
+penetration depth calculations
+
+Impulse resolution
+
+$<$ relative velocity
+
+$<$ new velocity in Y
+
+$<$ new velocity in Y
+
+$<$elasticity
+
+scalar calculations for new velcotities
+
+Velocity for \hyperlink{class_movable}{Movable} p
+
+Velocity for \hyperlink{class_movable}{Movable} b 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_collision_8h}{Collision.\-h}\item 
+src/Collision.\-cpp\end{DoxyCompactItemize}
